@@ -35,8 +35,6 @@ if ($body && isset($body['result']['reviews'])) {
 		return $review['rating'] == 5;
 	});
 
-	// dd($fiveStarReviews);
-
 	if (count($fiveStarReviews) >= 3) {
 		$reviewsToShow = array_slice($fiveStarReviews, 0, 3);
 	} else {
@@ -46,7 +44,6 @@ if ($body && isset($body['result']['reviews'])) {
 	$reviewsToShow = array_slice($fallbackReviews, 0, 3);
 }
 ?>
-
 
 <section <?= get_block_wrapper_attributes(['class' => $containerClasses,]); ?>>
 	<article class="reviews-marker d-flex flex-column align-items-center gap-2 p-3 rounded-4 text-center">
