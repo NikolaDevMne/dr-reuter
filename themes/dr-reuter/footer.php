@@ -15,9 +15,6 @@ $terms = get_terms([
     <div class="container">
         <div class="row mb-3">
             <div class="footer-col col-md-3 col-12 d-flex flex-column gap-3 text-md-start text-center mb-md-0 mb-5">
-                <!-- <a href="/">
-                    <img width="161" height="68" src="/wp-content/uploads/2024/06/reuter-logo-footer.svg" alt="">
-                </a> -->
                 <h2>
                     <?php customString('Working hours:'); ?>
                 </h2>
@@ -55,7 +52,7 @@ $terms = get_terms([
                                     <?= $term_title ?>
                                 </a>
                             </li>
-                        <?php endforeach ?>
+                        <?php endforeach; ?>
                     </ul>
                 </nav>
             </div>
@@ -80,15 +77,15 @@ $terms = get_terms([
                     <a class="me-3" href="<?= esc_url(get_privacy_policy_url()) ?>">
                         <?php customString('Privacy policy'); ?>
                     </a>
-                    <a href="#">
+                    <a href="<?= esc_url(get_privacy_policy_url()) ?>">
                         <?php customString('Terms of use'); ?>
                     </a>
                 </span>
                 <p class="my-md-0 my-3 text-md-start text-center">
-                    <?php customString(get_theme_mod('license', '')) ?>
+                    <?php customString(get_field('licence', 'options')); ?>
                 </p>
                 <p>
-                    <?php customString('© 2024, All Rights Reserved'); ?>
+                    <?php customString(get_field('footer_cr_label', 'options')); ?>
                 </p>
             </div>
         </div>
@@ -96,6 +93,7 @@ $terms = get_terms([
 </footer>
 
 <?php wp_footer(); ?>
+
 </body>
 
 </html>
