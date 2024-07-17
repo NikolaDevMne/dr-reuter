@@ -11,7 +11,7 @@
 				<p>
 					We are here to help
 				</p>
-				<a class="stretched-link" aria-label="Contact link" href="https://wa.me/971505142818"></a>
+				<a class="stretched-link" aria-label="Contact link" href="https://wa.me/<?= get_field('whatsapp_number', 'options') ?>"></a>
 			</article>
 		</li>
 		<!-- 505142818 -->
@@ -38,7 +38,7 @@
 					Call us
 				</h3>
 				<p>
-					Mon-sat from 8am to 6pm
+					<?= get_field('working_days', 'options') ?> <br> from <?= get_field('working_hours', 'options') ?>
 				</p>
 				<a class="stretched-link" aria-label="Contact link" href="tel:+97142228811"></a>
 			</article>

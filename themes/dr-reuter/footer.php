@@ -19,8 +19,8 @@ $terms = get_terms([
                     <?php customString('Working hours:'); ?>
                 </h2>
                 <p>
-                    <?php customString('Monday - Saturday'); ?> <br>
-                    <?php customString('08:00am - 6:00pm'); ?>
+                    <?php customString(get_field('working_days', 'options')); ?> <br>
+                    <?php customString(get_field('working_hours', 'options')); ?>
                 </p>
             </div>
             <div class="footer-col col-md-3 col-6 d-flex flex-column gap-3">

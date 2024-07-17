@@ -42,10 +42,10 @@ $additionalClasses = is_tax() ? null : 'd-flex flex-column gap-5';
                         Working hours
                     </h3>
                     <p class="mb-1">
-                        Monday - Saturday
+                        <?php customString(get_field('working_days', 'options')); ?>
                     </p>
                     <p class="mb-1">
-                        08:00-18:00
+                        <?php customString(get_field('working_hours', 'options')); ?>
                     </p>
                     <a href="<?= get_permalink(27) ?>">
                         <button class="btn btn-default">Get in touch</button>
