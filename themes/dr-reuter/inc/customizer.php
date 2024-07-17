@@ -97,17 +97,6 @@ function drreuter_customize_register($wp_customize) {
             'step' => 1,
         ),
     ));
-
-    $wp_customize->add_setting('license', array(
-        'default'   => '',
-        'transport' => 'refresh',
-    ));
-
-    $wp_customize->add_control('license', array(
-        'label'    => __('Footer license', 'drreuter'),
-        'section'  => 'license_section',
-        'type'     => 'text',
-    ));
 }
 
 add_action('customize_register', 'drreuter_customize_register');
