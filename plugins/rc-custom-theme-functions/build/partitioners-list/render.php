@@ -9,6 +9,7 @@ $args = [
 	'order'          => 'ASC'
 ];
 $getDoctorPosts = new WP_Query($args);
+
 $title = $attributes['title'] ?? '';
 $subTitle = $attributes['subTitle'] ?? '';
 $description = $attributes['description'] ?? '';
