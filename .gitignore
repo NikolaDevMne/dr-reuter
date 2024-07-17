@@ -1,9 +1,3 @@
-
-# uploads
-# wflogs
-# upgrade-temp-backup
-# upgrade
-# litespeed
-# plugins/*
-
 *
+!themes
+!plugins/rc-custom-theme-functions
