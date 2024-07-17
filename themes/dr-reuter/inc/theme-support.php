@@ -15,7 +15,6 @@ function allow_svg_upload($mime_types) {
 }
 add_filter('upload_mimes', 'allow_svg_upload');
 
-
 function my_login_logo_one() {
   $custom_logo_id = get_theme_mod('custom_logo');
   $logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
@@ -34,6 +33,9 @@ function my_login_logo_one() {
 
 $role_object = get_role('editor');
 $role_object->add_cap('edit_theme_options');
+$role_object->add_cap('manage_privacy_options', true);
+$role_object->add_cap('manage_options');
+
 
 add_action('login_enqueue_scripts', 'my_login_logo_one');
 
