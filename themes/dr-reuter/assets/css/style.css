@@ -831,20 +831,20 @@ img-comparison-slider:focus-visible {
     padding-left: 0;
   }
 
-  /* .accordion .accordion-body ul {
-    text-align: center;
-    margin-top: 1rem;
+  .accordion .accordion-body ol {
+    padding-left: 1rem;
   }
 
-  .accordion .accordion-body ul li {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+  .accordion .accordion-body ol li {
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
   }
-  .accordion .accordion-body ul li ul {
-    text-align: start;
-  } */
+
+  .accordion .accordion-body ol li::before {
+    margin-top: 5px;
+    margin-right: 3.5px;
+  }
 }
 
 /*--------------------------------------------------------------
