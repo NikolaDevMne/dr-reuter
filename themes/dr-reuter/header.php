@@ -15,6 +15,7 @@ $additionalClasses = is_tax() ? null : 'd-flex flex-column gap-5';
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="MKlEgdQMAXR04FNa0WFVL8EM_xNrRD2WpiJcPgAPZDE" />
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel='icon' href='favicon.ico' type='image/x-icon' />
     <?php wp_head(); ?>
