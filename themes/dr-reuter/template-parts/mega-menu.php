@@ -56,7 +56,7 @@ $parentTerms = get_terms([
 										]);
 									?>
 										<li>
-											<a class="primary-color fw-bold fs-5" href="<?= $childUrl ?>">
+											<a class="primary-color fw-bold fs-6" href="<?= $childUrl ?>">
 												<?= $childTitle ?>
 											</a>
 										</li>
