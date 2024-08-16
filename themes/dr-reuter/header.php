@@ -33,7 +33,9 @@ $additionalClasses = is_tax() ? null : 'd-flex flex-column gap-5';
                 <?= custom_hamburger_icon() ?>
             </button>
             <nav class="collapse navbar-collapse" id="navbarSupportedContent">
+
                 <?php wp_nav_menu($walker_args); ?>
+
                 <span class="mobile-menu d-xl-none d-block text-center">
                     <div class="divider w-100 my-3"></div>
                     <ul class="w-100 d-flex align-items-center justify-content-center gap-3 mb-5">

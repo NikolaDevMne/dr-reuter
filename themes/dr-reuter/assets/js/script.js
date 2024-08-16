@@ -15,13 +15,16 @@ document.addEventListener("DOMContentLoaded", () => {
     ".main-links .main-link-container .sub-links"
   );
   const mediaQuery = window.matchMedia("(max-width: 768px)");
+  const bodyElement = document.querySelector("body");
 
   function addClassHandler() {
     megaMenu.classList.add("show");
+    bodyElement.classList.add("overflow-hidden");
   }
 
   function removeClassHandler() {
     megaMenu.classList.remove("show");
+    bodyElement.classList.remove("overflow-hidden");
   }
 
   mainLinks.forEach((e) => {
@@ -29,7 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
       subMenus.forEach((e) => {
         e.classList.remove("show");
       });
-      e.nextElementSibling.classList.add("show");
+
+      if (e && e.nextElementSibling) {
+        e.nextElementSibling.classList.add("show");
+      }
     });
   });
 
